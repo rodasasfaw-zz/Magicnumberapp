@@ -10,6 +10,7 @@ import java.util.Scanner;
 public class Maincontroller {
     @RequestMapping("/getnum")
    public String shownum(@RequestParam("num") int num){
+        int starting_num = num;
                     int counter = 0;
 
                      String magicnum = "";
@@ -25,15 +26,14 @@ public class Maincontroller {
                              num = (num * 3) + 1;
 
                          counter++;
-                         magicnum = magicnum + Integer.toString(num) + "</br> ";
+                         magicnum = magicnum+Integer.toString(num) + "  ";
+
                          System.out.println(num);
                          }
 
 
-return "Starting number is: " +magicnum +"</br>";
+return "Starting number is: "+Integer.toString(starting_num)+"</br>"+Integer.toString(starting_num)+"  "+magicnum;
                  }
-
-
 
 
 
