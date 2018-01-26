@@ -11,7 +11,7 @@ public class Maincontroller {
     @RequestMapping("/getnum")
    public String shownum(@RequestParam("num") int num){
         int starting_num = num;
-                    int counter = 0;
+                
 
                      String magicnum = "";
 
@@ -22,7 +22,7 @@ public class Maincontroller {
                          else
                              num = (num * 3) + 1;
 
-                         counter++;
+
                          magicnum = magicnum+Integer.toString(num) + "  ";
 
                          }
