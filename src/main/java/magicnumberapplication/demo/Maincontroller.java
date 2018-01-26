@@ -14,9 +14,6 @@ public class Maincontroller {
                     int counter = 0;
 
                      String magicnum = "";
-                    /* System.out.println("Enter a number:");
-               /*      Scanner keyboard = new Scanner(System.in);
-                     int magic_number = keyboard.nextInt();*/
 
                      while(num > 1){
 
@@ -28,7 +25,6 @@ public class Maincontroller {
                          counter++;
                          magicnum = magicnum+Integer.toString(num) + "  ";
 
-                         System.out.println(num);
                          }
 
 
